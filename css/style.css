@@ -71,6 +71,7 @@
 
 body {
     text-transform: capitalize;
+    font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 h1,
@@ -175,16 +176,19 @@ button {
     background-color: #b3b8b8b0;
     backdrop-filter: blur(2px);
 }
-
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
 .header .logo {
-    width: 40%;
+    width: fit-content;
     float: left;
+    flex: 1;
 }
 
 .header .nav {
-    float: left;
-    width: 60%;
-    margin-top: 1.5%;
     list-style: none;
     text-align: right;
 }
@@ -192,7 +196,6 @@ button {
 
 .header .logo img {
     width: 70px;
-    margin-top: 3%;
     background: #b7f4ff;
     padding: 0 12px 0 0px;
     border-radius: 5px 5px 5px 31px;
